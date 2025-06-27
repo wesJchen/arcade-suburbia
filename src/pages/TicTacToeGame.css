@@ -1,0 +1,183 @@
+/* TicTacToe Game Styles */
+.status {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00c896;
+}
+
+.scoreboard {
+  background: #2a2a3f;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid #00c896;
+}
+
+.scoreboard h2 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.score-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.player-x {
+  color: #ff6b6b;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.player-o {
+  color: #4ecdc4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.draws {
+  color: #fdcb6e;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.score {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.reset-score-button {
+  background-color: #6c5ce7;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-score-button:hover {
+  background-color: #5f4dd0;
+}
+
+.board {
+  display: inline-block;
+  margin: 2rem 0;
+  background: #2a2a3f;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #00c896;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #00c896;
+  background: #1e1e2f;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 2px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  background: #3a3a4f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 200, 150, 0.3);
+}
+
+.square:disabled {
+  cursor: not-allowed;
+  transform: none;
+}
+
+.square:disabled:hover {
+  background: #1e1e2f;
+  transform: none;
+  box-shadow: none;
+}
+
+/* X and O colors on the board */
+.square-x {
+  color: #ff6b6b !important;
+}
+
+.square-o {
+  color: #4ecdc4 !important;
+}
+
+.reset-button {
+  background-color: #00c896;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset-button:hover {
+  background-color: #00b386;
+}
+
+/* Winner Display Styles */
+.winner-display {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #2a2a3f;
+  border: 3px solid #00c896;
+  border-radius: 12px;
+  animation: slideUp 0.5s ease-out;
+}
+
+.winner-text {
+  color: #00c896;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 200, 150, 0.5);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
