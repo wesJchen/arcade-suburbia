@@ -163,13 +163,6 @@ function Game() {
       <button className="reset-button" onClick={resetGame}>
         New Game
       </button>
-
-      {/* Winner Display */}
-      {winner && (
-        <div className="winner-display">
-          <h2 className="winner-text">{winner} is the Winner!</h2>
-        </div>
-      )}
     </div>
   );
 }

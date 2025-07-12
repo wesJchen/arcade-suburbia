@@ -3,15 +3,15 @@
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00c896;
+  color: #7fffd4; /* aquamarine */
 }
 
 .scoreboard {
-  background: #2a2a3f;
+  background: #36454f; /* charcoal */
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  border: 2px solid #00c896;
+  border: 2px solid #7fffd4; /* aquamarine */
 }
 
 .scoreboard h2 {
@@ -35,13 +35,13 @@
 }
 
 .player-x {
-  color: #ff6b6b;
+  color: #ff4444; /* red */
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .player-o {
-  color: #4ecdc4;
+  color: #7fffd4; /* aquamarine */
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -53,7 +53,7 @@
 }
 
 .score {
-  background: #1e1e2f;
+  background: #2f2f2f; /* darker charcoal */
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -64,27 +64,28 @@
 }
 
 .reset-score-button {
-  background-color: #6c5ce7;
+  background-color: #7fffd4; /* aquamarine */
   border: none;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
-  color: white;
+  color: #36454f; /* charcoal text */
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
+  font-weight: bold;
 }
 
 .reset-score-button:hover {
-  background-color: #5f4dd0;
+  background-color: #66d4b8; /* darker aquamarine */
 }
 
 .board {
   display: inline-block;
   margin: 2rem 0;
-  background: #2a2a3f;
+  background: #36454f; /* charcoal */
   padding: 1rem;
   border-radius: 12px;
-  border: 2px solid #00c896;
+  border: 2px solid #7fffd4; /* aquamarine */
 }
 
 .board-row {
@@ -94,8 +95,8 @@
 .square {
   width: 80px;
   height: 80px;
-  border: 2px solid #00c896;
-  background: #1e1e2f;
+  border: 2px solid #7fffd4; /* aquamarine */
+  background: #2f2f2f; /* darker charcoal */
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
@@ -109,9 +110,9 @@
 }
 
 .square:hover {
-  background: #3a3a4f;
+  background: #4a4a4a; /* lighter charcoal */
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 200, 150, 0.3);
+  box-shadow: 0 4px 8px rgba(127, 255, 212, 0.3); /* aquamarine shadow */
 }
 
 .square:disabled {
@@ -120,26 +121,26 @@
 }
 
 .square:disabled:hover {
-  background: #1e1e2f;
+  background: #2f2f2f; /* darker charcoal */
   transform: none;
   box-shadow: none;
 }
 
 /* X and O colors on the board */
 .square-x {
-  color: #ff6b6b !important;
+  color: #ff4444 !important; /* red */
 }
 
 .square-o {
-  color: #4ecdc4 !important;
+  color: #7fffd4 !important; /* aquamarine */
 }
 
 .reset-button {
-  background-color: #00c896;
+  background-color: #7fffd4; /* aquamarine */
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: white;
+  color: #36454f; /* charcoal text */
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
@@ -147,37 +148,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .reset-button:hover {
-  background-color: #00b386;
-}
-
-/* Winner Display Styles */
-.winner-display {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: #2a2a3f;
-  border: 3px solid #00c896;
-  border-radius: 12px;
-  animation: slideUp 0.5s ease-out;
-}
-
-.winner-text {
-  color: #00c896;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(0, 200, 150, 0.5);
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  background-color: #66d4b8; /* darker aquamarine */
 } 
